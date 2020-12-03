@@ -4,6 +4,8 @@ import random
 from discord.ext import commands, tasks
 from itertools import cycle
 
+TOKEN = "Token Here"
+
 def get_prefix(client, message):
     with open('prefixes.json', 'r') as f:
         prefixes = json.load(f)
@@ -114,4 +116,4 @@ async def unban(ctx, *, member):
             await ctx.guild.unban(user)
             await ctx.send(f'Unbanned {user.name}#{user.discriminator}')
 
-client.run('NzgzMzQzNzQ3NTUwOTM3MDk4.X8ZXtw.YFoSUivl33GH8zaqJtwUzONUmog')
+client.run(TOKEN)
