@@ -4,7 +4,7 @@ import random
 from discord.ext import commands, tasks
 from itertools import cycle
 
-TOKEN = "Token Here" # Example TOKEN = "ODAzMjIyMTI2NTI5ODcxODcy.YA6o5g.ZJoCVLVRyPz3y2d_Xj1IBGXaXjI"
+TOKEN = "Token Here" # Example TOKEN = "ODA. . .. . . . . . .. . . "
 
 def get_prefix(client, message):
     with open('prefixes.json', 'r') as f:
